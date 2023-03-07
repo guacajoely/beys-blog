@@ -14,7 +14,7 @@ The team has requested that all blog article authors be listed at the top of the
 
 ## Articles
 
-The team has requested that all blog articles be listed at the top of the page, aligned right. It should display just title of the article. When a title is clicked, the content of the article, and the auhor of the article should be displayed in a pop-up.
+The team has requested that all blog articles be listed at the top of the page, aligned right. It should display just title of the article. When a title is clicked, the content of the article, and the author of the article should be displayed in a pop-up.
 
 #### Example message
 
