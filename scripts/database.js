@@ -1,13 +1,16 @@
 const database = {
 
     authors: [
-      { id: 1, name: "Tyler", bio: "I make things, but sometimes I create" },
+      { id: 1, 
+        name: "Tyler", 
+        bio: "I make things, but sometimes I create" },
       {
         id: 2,
         name: "Aja",
-        bio: "Queen Bey's biggest, and hardest working, fan"
-      },
-      { id: 3, name: "Theo", bio: "I've got Bey's back" }
+        bio: "Queen Bey's biggest, and hardest working, fan"},
+      { id: 3, 
+        name: "Theo", 
+        bio: "I've got Bey's back" }
     ],
 
     articles: [
@@ -63,6 +66,21 @@ const database = {
       { id: 2, name: "Work" },
       { id: 3, name: "Music" }
     ]
-    
+
   };
-  
+
+
+// EXPORT ARRAYS FROM DB
+
+
+export const getAuthors = () => {
+    return database.authors.map(authorObject => ({...authorObject}))
+}
+
+export const getArticles = () => {
+    return database.articles.map(articleObject => ({...articleObject}))
+}
+
+export const getCategories = () => {
+    return database.categories.map(categoryObject => ({...categoryObject}))
+}
